@@ -90,7 +90,7 @@ func process(signedAttestationStatement string) {
 		fmt.Println("Timestamp: " + strconv.FormatUint(stmt.Timestamp, 10) + "ms")
 		fmt.Println("APK package name: " + stmt.ApkPackageName)
 		fmt.Println("APK digest SHA256: " + stmt.ApkDigestSha256)
-		fmt.Println("APK certificate digest SHA256: " + stmt.ApkCertificateDigestSha256)
+		fmt.Printf("APK certificate digest SHA256: %+v\n", stmt.ApkCertificateDigestSha256)
 		fmt.Println("CTS profile match: " + strconv.FormatBool(stmt.CtsProfileMatch))
 		fmt.Println("Has basic integrity: " + strconv.FormatBool(stmt.HasBasicIntegrity))
 
